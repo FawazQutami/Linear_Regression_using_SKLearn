@@ -2,7 +2,6 @@
 
 import time
 import numpy as np
-import matplotlib.pyplot as plt
 
 # scikit learn
 from sklearn import datasets
@@ -16,7 +15,7 @@ import warnings
 warnings.filterwarnings("ignore")
 
 
-def sklearn_lr(Xs, X_trn, X_tst, y_trn, y_tst):
+def sklearn_lr(X_trn, y_trn):
     """  Linear Regression using scikit learn """
     """
         Linear model: y = α + βX
@@ -82,7 +81,7 @@ if __name__ == '__main__':
 
         # Test using sklearn library
         print('\n ---------- LR using sklearn library ----------')
-        sklearn_lr(X, X_train, X_test, y_train, y_test)
+        sklearn_lr(X_train, y_train)
 
     except:
         pass
